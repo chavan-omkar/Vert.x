@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+
+  db:
+    image: postgres:13.1-alpine
+    environment:
+      # Create db
+      POSTGRES_DB: postgres
+      # Use postgres/secret user/password credentials
+      POSTGRES_PASSWORD: P@ssw0rd
+      # enforce UTC timezone
+      TZ: UTC
+    volumes:
+      - postgres-data-local:/var/lib/postgresql/data
+    ports:
+      - 5433:5433
+
+  adminer:
+    image: adminer:4
+    ports:
+      - 8081:8080
+
+# permanent storage of data.
+# > docker volume rm postgres_vertx-stock-broker-data-local
+volumes:
+  postgres-data-local:
