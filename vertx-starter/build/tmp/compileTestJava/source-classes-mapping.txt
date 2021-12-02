@@ -1,8 +1,0 @@
-com/example/vertx_starter/json/JsonObjectExample.java
- com.example.vertx_starter.json.JsonObjectExample
-com/example/vertx_starter/TestMainVerticle.java
- com.example.vertx_starter.TestMainVerticle
-com/example/vertx_starter/json/Person.java
- com.example.vertx_starter.json.Person
-com/example/vertx_starter/FuturePromiseExample.java
- com.example.vertx_starter.FuturePromiseExample
